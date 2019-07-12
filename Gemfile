@@ -12,6 +12,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 gem 'capistrano-bundler', '~> 1.6'
 gem 'pg', '~> 1.1.4'
+gem 'sqlite3', '~> 1.4.1'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -38,9 +39,6 @@ gem 'jquery-rails'
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
-end
-group :development, :test do
-  gem 'sqlite3'
 end
 group :test do
   gem 'minitest-spec-rails'
